@@ -1,0 +1,40 @@
+import React from "react";
+import "./contact.css";
+import Header from "../../components/Header";
+import HeaderImage from "../../images/header_bg_2.jpg";
+import { MdEmail, MdPhone } from "react-icons/md";
+import { BsMessenger } from "react-icons/bs";
+import { IoLogoWhatsapp } from "react-icons/io";
+
+const Contact = () => {
+	return (
+		<>
+			<Header title="Get In Touch" image={HeaderImage}>
+				Feel free to reach out to us
+				
+			</Header>
+
+			<section className="contact">
+				<div className="container contact__container">
+					<div className="contact__wrapper">
+						<a
+							href="tel:9896960452"
+							
+						>
+							<MdPhone />
+						</a>
+					
+						<a
+							href="https://wa.me/+919896960452"
+							
+						>
+							<IoLogoWhatsapp />
+						</a>
+					</div>
+				</div>
+			</section>
+		</>
+	);
+};
+
+export default Contact;
